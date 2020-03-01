@@ -1,0 +1,224 @@
+<head>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <title>大树人格测试</title>
+    <img src="/images/topic.png" width="1000px"
+        height="400px">
+    <h1>人格特质测试</h1>
+    <p style="font-size:20px">在夫妻关系、亲子关系、同学关系、职场关系中，你是否常有这样的疑惑----你怎么这样？你为什么不理解我？ </p>
+    <img src="/images/homepage.png" width="350px" height ="200px">
+    <p style="font-size:20px">   产生这样的困惑是因为每个人都有与生俱来的人格特质，无论生长环境是否相同，人格特质在潜意识里决定了你们不同的思维方式和行动方案。想了解你的人格特质、内在优势、沟通特点吗？想知道你是如何面对压力的吗？我们邀请你做个简单的测试，引导你对自己及他人多一份理解和接纳：</p>
+
+    <h4 s>请从下面四十项中选择最符合你的5项</h1>
+</head>
+<style>
+</style>
+<boby>
+    <div class="col-12">
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 shudiao "  onclick="shudiaoClicked(this)" >喜欢独自工作</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 shudiao" onclick="shudiaoClicked(this)" >消极应对的
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 shudiao"  onclick="shudiaoClicked(this)">一丝不苟的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 meigui" onclick="meiguiClicked(this)">喜欢控制
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 meigui" onclick="meiguiClicked(this)">自信的
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 meigui" onclick="meiguiClicked(this)">求胜心强，喜欢竞争
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 songshu"  onclick="songshuClicked(this)">拒绝改变的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 songshu" onclick="songshuClicked(this)">冷幽默、幽默感强
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 songshu" onclick="songshuClicked(this)">善于宽容和理解
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 zonglv" onclick="zonglvClicked(this)">冲动的
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 zonglv" onclick="zonglvClicked(this)">健谈的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 songshu" onclick="songshuClicked(this)">喜欢罗列清单
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 zonglv " onclick="zonglvClicked(this)">有魅力的
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 songshu" onclick="songshuClicked(this)" >忠诚的
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 zonglv" onclick="zonglvClicked(this)">容易厌倦的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 shudiao" onclick="shudiaoClicked(this)">在意细节
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 meigui" onclick="meiguiClicked(this)">善于解决问题
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 songshu" onclick="songshuClicked(this)">调解者
+            </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 shudiao"  onclick="shudiaoClicked(this)">善于分析的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 zonglv" onclick="zonglvClicked(this)">冒险的
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 zonglv" onclick="zonglvClicked(this)">热情的
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 shudiao"  onclick="shudiaoClicked(this)">追求卓越
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 meigui" onclick="meiguiClicked(this)">直言不讳、固执己见
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 zonglv" onclick="zonglvClicked(this)">充满激情的
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 meigui" onclick="meiguiClicked(this)">意志坚强的
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 songshu" onclick="songshuClicked(this)">不苛求的
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 zonglv" onclick="zonglvClicked(this)">散漫不守纪律的</button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 shudiao"  onclick="shudiaoClicked(this)">非黑即白的
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 meigui" onclick="meiguiClicked(this)">任务导向型
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 meigui" onclick="meiguiClicked(this)">富有开拓精神
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 meigui" onclick="meiguiClicked(this)">主动的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 songshu" onclick="songshuClicked(this)">性情平和的
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 zonglv" onclick="zonglvClicked(this)">乐观的
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 songshu" onclick="songshuClicked(this)">好的倾听者
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 shudiao"  onclick="shudiaoClicked(this)">有创造力的，艺术型的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 shudiao"  onclick="shudiaoClicked(this)">敏感的
+        </button>
+    </div>
+    <div class="row mb-3">
+        <button type="button" class="btn btn-outline-primary btn-lg col-3 meigui" onclick="meiguiClicked(this)">在压力下成长
+        </button>
+        <button type="button" class="btn btn-outline-secondary btn-lg col-3 songshu" onclick="songshuClicked(this)">被动的
+        </button>
+        <button type="button" class="btn btn-outline-success btn-lg col-3 songshu" onclick="songshuClicked(this)">稳定而一成不变的
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-lg col-3 zonglv" onclick="zonglvClicked(this)">好奇的
+        </button>
+    </div>
+</div>
+</boby>
+
+<script>
+var zonglv =0;
+var shudiao =0;
+var meigui = 0;
+var songshu = 0;
+var count =0;
+ async function zonglvClicked(b){
+   b.disabled="value";
+  b.className="btn btn-primary btn-lg col-3 zonglv";
+   zonglv=zonglv+1;
+   count=count+1;
+   console.log(zonglv);
+   console.log(count);
+   if(count==5){
+       var response = await fetch("/test/result?shudiao="+shudiao+"&meigui="+meigui+"&songshu="+songshu+"&zonglv="+zonglv,{
+           method:"POST",
+           credentials: 'same-origin',
+       });
+       if (response.ok) {
+                    var data = await response.json();
+                
+                    window.location = data.url;
+                } else {
+                    alert(response.status + ": " + response.statusText);
+                }
+  
+
+   }
+
+}
+async function songshuClicked(b){
+    b.disabled="value";
+    b.className="btn btn-primary btn-lg col-3 songshu";
+    songshu=songshu+1;
+    count=count+1;
+    console.log(songshu);
+   console.log(count);
+   if(count==5){
+       var response = await fetch("/test/result?shudiao="+shudiao+"&meigui="+meigui+"&songshu="+songshu+"&zonglv="+zonglv,{
+           method:"POST",
+           credentials: 'same-origin',
+       });
+       if (response.ok) {
+                    var data = await response.json();
+                 
+                    window.location = data.url;
+                } else {
+                    alert(response.status + ": " + response.statusText);
+                }
+    
+   
+
+   }
+}
+async function meiguiClicked(b){
+    b.disabled = "value";
+    b.className="btn btn-primary btn-lg col-3 zonglv";
+    meigui = meigui+1;
+    count=count+1;
+    console.log(meigui);
+    console.log(count);
+    if(count==5){
+       var response = await fetch("/test/result?shudiao="+shudiao+"&meigui="+meigui+"&songshu="+songshu+"&zonglv="+zonglv,{
+           method:"POST",
+           credentials: 'same-origin',
+       });
+       if (response.ok) {
+                    var data = await response.json();
+                
+                    window.location = data.url;
+                } else {
+                    alert(response.status + ": " + response.statusText);
+                }
+    
+   
+
+   }
+
+}
+async function shudiaoClicked(b){
+    b.disabled = "value";
+    b.className="btn btn-primary btn-lg col-3 zonglv";
+    shudiao = shudiao+1;
+    count=count+1;
+    console.log(shudiao);
+    console.log(count);
+    if(count==5){
+       var response = await fetch("/test/result?shudiao="+shudiao+"&meigui="+meigui+"&songshu="+songshu+"&zonglv="+zonglv,{
+           method:"POST",
+           credentials: 'same-origin',
+       });
+       if (response.ok) {
+                    var data = await response.json();
+                    
+                    window.location = data.url;
+                } else {
+                    alert(response.status + ": " + response.statusText);
+                }
+
+   
+
+   }
+}
+
+
+</script>
